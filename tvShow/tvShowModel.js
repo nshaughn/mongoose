@@ -11,6 +11,10 @@ const tvShowSchema = new mongoose.Schema({
         type: String,
         default: "Not Specified",
     },
+    rating: {
+        type: Number,
+        default: "Not Specified",
+    }
 });
 
 const TVShow = mongoose.model("NetflixTV", tvShowSchema); 

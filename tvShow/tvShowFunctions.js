@@ -63,3 +63,11 @@ exports.findTVShowActor = async (actorObject) => {
         console.log(error)
     }
 }
+
+exports.findTVShowRating = async (ratingObject) => {
+    try {
+        return await TVShow.find(ratingObject)
+    } catch (error) {
+        console.log(error)
+    }
+}
